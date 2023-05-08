@@ -10,6 +10,8 @@ import techproed.utilities.Driver;
 
 public class AmazonStepDefinition {
 
+    //feature classinda cümle ismine control basili tiklayinca burda ki
+    // ilgili metoda getirir.
     AmazonPage amazonPage;
 
     @Given("kullanici amazon sayfasina gider")
@@ -27,13 +29,27 @@ public class AmazonStepDefinition {
 
     @And("sayfayi kapatir")
     public void sayfayiKapatir() {
-        Driver.getDriver().close();
+        Driver.quitDriver();
     }
 
     @And("arama kutusnda Selenium aratir")
     public void aramaKutusndaSeleniumAratir() {
         amazonPage = new AmazonPage();
         amazonPage.aramaKutusu.sendKeys("Selenium", Keys.ENTER);
+
+    }
+
+    @And("arama kutusunda java aratir")
+    public void aramaKutusundaJavaAratir() {
+        amazonPage = new AmazonPage();
+        amazonPage.aramaKutusu.sendKeys("java", Keys.ENTER);
+
+    }
+
+    @And("arama kutusnda SQL aratir")
+    public void aramaKutusndaSQLAratir() {
+        amazonPage = new AmazonPage();
+        amazonPage.aramaKutusu.sendKeys("SQL", Keys.ENTER);
 
     }
 }
