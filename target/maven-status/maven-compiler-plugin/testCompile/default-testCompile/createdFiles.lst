@@ -1,3 +1,4 @@
+techproed\stepDefinitions\GoogleStepDefinition.class
 techproed\pages\TechproPage.class
 techproed\utilities\Driver.class
 techproed\stepDefinitions\TechproStepDefinition.class
@@ -5,3 +6,4 @@ techproed\runners\Runner.class
 techproed\utilities\ConfigReader.class
 techproed\stepDefinitions\AmazonStepDefinition.class
 techproed\pages\AmazonPage.class
+techproed\pages\GooglePage.class

@@ -29,7 +29,7 @@ public class AmazonStepDefinition {
 
     @And("sayfayi kapatir")
     public void sayfayiKapatir() {
-        Driver.quitDriver();
+        Driver.closeDriver();
     }
 
     @And("arama kutusnda Selenium aratir")
