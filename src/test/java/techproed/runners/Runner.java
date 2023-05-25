@@ -17,7 +17,7 @@ senaryoyu çalıştırabiliriz
         glue = {"techproed/stepDefinitions"},//Bu parametre ile kodlarımızı yazdığımız stepDefinition
         //class'ının packege'ını belirtiriz
         tags = "@GoogleSearch",
-        dryRun = false )
+        dryRun = true )
 /*
 features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
 glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root)
