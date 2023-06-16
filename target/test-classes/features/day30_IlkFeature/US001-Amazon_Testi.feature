@@ -14,3 +14,4 @@ Feature: US001 Amazon Sayfasinda Urun Aratma
         And arama kutusnda SQL aratir
         And sayfayi kapatir
 
+

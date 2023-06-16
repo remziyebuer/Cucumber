@@ -11,13 +11,12 @@ Runner class; testNG deki .xml file larda belirttiğimiz class'ları,packagelar�
 senaryoyu çalıştırabiliriz
  */
 //Cucumber ile JUnit'in entegre olmasını sağlayan test çalıştırıcı notasyonudur
-@RunWith(Cucumber.class)
+
 //Seneryoların nerede ve nasıl çalışacağı, hangi raporu kullanacağıyla alakalı seçenekleri ayarlarız
-@CucumberOptions(features = "src/test/resources/features/",
-        glue = {"techproed/stepDefinitions"},//Bu parametre ile kodlarımızı yazdığımız stepDefinition
+
+        //Bu parametre ile kodlarımızı yazdığımız stepDefinition
         //class'ının packege'ını belirtiriz
-        tags = "@GoogleSearch",
-        dryRun = true )
+
 /*
 features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
 glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root)

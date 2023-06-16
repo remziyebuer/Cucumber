@@ -52,4 +52,7 @@ public class AmazonStepDefinition {
         amazonPage.aramaKutusu.sendKeys("SQL", Keys.ENTER);
 
     }
+
+
+
 }
