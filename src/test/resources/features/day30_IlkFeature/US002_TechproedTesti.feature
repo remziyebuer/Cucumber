@@ -1,6 +1,7 @@
 Feature: US002_TechproEducation Testi
-  @gr1
+
   Scenario: TC01_TechProEducation Sayfa Testi
+
     Given kullanici techpro sayfasina gider
     Then cikan reklam kapatilir
     And arama kutusunda QA aratir
