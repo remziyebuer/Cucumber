@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 import techproed.pages.TechproPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+import techproed.utilities.ReusableMethods;
 
 import static org.junit.Assert.assertTrue;
 
@@ -25,8 +26,8 @@ public class TechproEdStepDefinition {
         techproPage.reklam.click();
     }
 
-    @And("arama kutusunda QA aratir")
-    public void aramaKutusundaQAAratir() {
+    @And("arama kutusunda qa aratir")
+    public void aramaKutusundaQaAratir() {
         techproPage =new TechproPage();
         techproPage.searchBox.sendKeys("qa", Keys.ENTER );
     }
@@ -34,5 +35,27 @@ public class TechproEdStepDefinition {
     @And("sayfa basliginin qa icerdigini test eder")
     public void sayfaBasligininQaIcerdiginiTestEder() {
         assertTrue(Driver.getDriver().getTitle().contains("qa"));
+    }
+
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String url) {//keyde ne belirti isek url ' e onu yazmaliyiz
+        Driver.getDriver().get(ConfigReader.getProperty(url));
+    }
+
+    @And("kullanici tüm sayfanin resmini alir")
+    public void kullaniciTumSayfaninResminiAlir() {
+        ReusableMethods.tumSayfaResmi("TumSayfaResmi");
+
+    }
+
+    @And("techpro arama kutusunda {string} aratir")
+    public void techproAramaKutusundaAratir(String arananKelime) {
+        techproPage= new TechproPage();
+        techproPage.searchBox.sendKeys(arananKelime, Keys.ENTER);
+    }
+
+    @And("sayfa basliginin {string} icerdigini test eder")
+    public void sayfaBasligininIcerdiginiTestEder(String metin) {
+       assertTrue(Driver.getDriver().getTitle().contains(metin));
     }
 }

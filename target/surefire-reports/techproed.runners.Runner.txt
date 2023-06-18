@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: techproed.runners.Runner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in techproed.runners.Runner
+initializationError(techproed.runners.Runner)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalArgumentException: path must exist: C:\Users\Zbook\IdeaProjects\Batch129_Cucumber\src\test\resources\features\day30_IlkFeature
+

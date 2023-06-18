@@ -1,7 +1,7 @@
 Feature: US001 Amazon Sayfasinda Urun Aratma
   Scenario: TC01 Amazon Sayfasinda Selenium Aratma
     Given kullanici amazon sayfasina gider
-    And arama kutusnda Selenium aratir
+    And arama kutusunda Selenium aratir
     And sayfayi kapatir
 
     Scenario: TC02_Amazon sayfasinda java aratma
@@ -11,7 +11,7 @@ Feature: US001 Amazon Sayfasinda Urun Aratma
 
       Scenario: TC03_Amazon sayfasinda SQL Aratma
         Given  kullanici amazon sayfasina gider
-        And arama kutusnda SQL aratir
+        And arama kutusunda SQL aratir
         And sayfayi kapatir
 
 
