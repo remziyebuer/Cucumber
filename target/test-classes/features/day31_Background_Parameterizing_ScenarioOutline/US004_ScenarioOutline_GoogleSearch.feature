@@ -1,18 +1,20 @@
-@GoogleSearchScenarioOutline
-Feature: Google_Search
+ #Scenario Outline: TestNG deki @DataProvider mantığıyla çalışır.
+  #Birden fazla veriyi tek seferde feature fileden kullanmamıza yardımcı olur
 
-  Background: kullanici google anasayfasina gider
-    Given kullanici google anasayfasina gider
+Feature: US004_Google Search
+  Background:Kullanici Google anasayfasina gider
+    Given kullanici "google_Url" sayfasina gider
+    Then kullanici cookies kabul ederek kapatir
 
-    Scenario Outline: Google aramalari
-      When kullanici googleda "<Aranacak_Kelime>" aratir
-      Then title'in "<Aranacak_Kelime>" icerdigini dogrula
+    Scenario Outline:Google Aramalari
+      When kullanici google'da "<aranacakKelime>" aratir
+      Then basligin "<aranacakKelime>" icerdigini dogrular
       And sayfayi kapatir
-
       Examples:
-        | Aranacak_Kelime |
-        | Java            |
-        | Sql             |
-        | JDBC            |
-        | Selenium        |
-        | Lambda          |
+        | aranacakKelime |
+        | volvo          |
+        | bmw            |
+        | mercedes       |
+        | audi           |
+        | ford           |
+
