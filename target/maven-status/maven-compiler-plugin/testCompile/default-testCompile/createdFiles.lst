@@ -1,5 +1,6 @@
 techproed\utilities\Driver.class
 techproed\pages\MedunnaPage.class
+techproed\pages\BlueRentalPage.class
 techproed\utilities\ExcelUtils.class
 techproed\pages\DataTablePage.class
 techproed\utilities\ConfigReader.class
@@ -7,5 +8,6 @@ techproed\pages\AmazonPage.class
 techproed\pages\TechproPage.class
 techproed\runners\Runner.class
 techproed\stepDefinitions\DataTableStepdefinition.class
+techproed\stepDefinitions\BlueRentalStepDefinition.class
 techproed\stepDefinitions\AmazonStepDefinition.class
 techproed\utilities\ReusableMethods.class
